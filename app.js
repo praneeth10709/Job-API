@@ -30,7 +30,6 @@ app.use(xss());
 
 app.use(express.json());
 const port=3000
-app.use(express.static('public'))
 app.use('/api/v1/auth',authRouter)
 app.use('/api/v1/jobs',auth,jobsRouter)
 
